@@ -3,12 +3,18 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router'
 
 import './App.css'
+import NavBar from './components/NavBar'
+import type { UserTypes } from "./types";
 
 const App: React.FC = () => {
+  const User: UserTypes = {
+    userName: "nirmal",
+    isLoggedIn: false
+  };
 
   return (
     <BrowserRouter>
-      <h1>NavBar</h1>
+      <NavBar User={User} />
       <div className="pages">
         <Routes>
           <Route path='/' element={<h1>Home Page</h1>} />
