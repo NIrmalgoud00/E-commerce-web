@@ -6,11 +6,15 @@ import './App.css'
 import NavBar from './components/NavBar'
 import type { UserTypes } from "./types";
 
+import { productsList } from "./services/products";
+
 const App: React.FC = () => {
   const User: UserTypes = {
     userName: "nirmal",
     isLoggedIn: false
   };
+
+  productsList()
 
   return (
     <BrowserRouter>
