@@ -20,4 +20,3 @@ export const productsList = async () => {
     }
 
 };
-

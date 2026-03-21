@@ -1,0 +1,17 @@
+.discount-image-section img {
+  width: 100%;
+  max-height: 400px;
+  /* Optional: Sets a max height for ultra-wide monitors */
+  object-fit: fill;
+  transition: opacity 0.3s ease;
+}
+
+.discount-image-section img:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 540px) {
+  .discount-image-section img {
+    max-height: 250px;
+  }
+}
